@@ -43,7 +43,7 @@ app.get(
   async (req: Request, res: Response, next: NextFunction) => {
     // console.log(req.query);
     try {
-      res.send(something);
+      res.send();
     } catch (error) {
       // console.log(error);
       // res.status(400).json({
@@ -52,7 +52,7 @@ app.get(
       // });
       next(error);
     }
-    res.send("Sever is Running because o john the don ");
+    res.send("Sever is Running ");
   }
 );
 

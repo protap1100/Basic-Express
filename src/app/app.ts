@@ -59,7 +59,7 @@ app.get(
 app.post("/", logger, (req: Request, res: Response) => {
   console.log(req.body);
   res.json({
-    message: "successfully received data",
+    message: "Data Received Successfully",
   });
 });
 

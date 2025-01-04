@@ -66,7 +66,7 @@ app.post("/", logger, (req: Request, res: Response) => {
 app.all("*", (req: Request, res: Response) => {
   res.status(400).json({
     success: false,
-    message: "Url Not Found",
+    message: "Error URL Not Found",
   });
 });
 
